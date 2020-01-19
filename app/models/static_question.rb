@@ -1,0 +1,2 @@
+class StaticQuestion < ApplicationRecord
+end

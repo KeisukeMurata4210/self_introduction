@@ -1,0 +1,7 @@
+<h1>自己紹介！</h1>
+<% @static_questions.each do |static_question| %>
+  <h1><%= static_question.content %></h1>
+<% end %>
+<% @questions.each do |question| %>
+  <h1><%= question.content %></h1>
+<% end %>

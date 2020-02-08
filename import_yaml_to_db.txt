@@ -1,0 +1,10 @@
+# ここからだとQuestionを参照できないから、コンソールにコピペして使う。
+require 'yaml'
+questions = YAML.load_file('./questions.yml')
+puts questions.class
+
+Question.delete_all
+
+questions.values.each do |q|
+  Question.new(content: q).save!
+end
